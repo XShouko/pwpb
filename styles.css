@@ -337,7 +337,6 @@ html {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap:1.5rem;
-    margin-top: 300px;
     
  }
 .form-container{
@@ -348,6 +347,7 @@ html {
  font-size: 2.0rem;
  font-weight: 600;
  margin-bottom:  1rem;
+ margin-top: 40%;
  color:black;
 }
 .form-container label {
@@ -392,10 +392,10 @@ html {
 .map iframe{
    display: flex;
    flex-direction: column;
-   width: 95%;
-   height: 80%;
-   margin-left:5%;
-   margin-top: 20%;
+   width: 90%;
+   height: 65%;
+   margin-left:10%;
+   margin-top:50%;
 }
 .sliders {
     margin-top: 200px;
