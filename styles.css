@@ -396,3 +396,49 @@ html {
    margin-left:5%;
    margin-top: 20%;
 }
+.sliders {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.slide-containers {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.geser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-shrink: 0;
+    transition: transform 0.5s ease;
+    background-color: rgb(65, 223, 65);
+    border-radius: 10%;
+    height: 500px;
+}
+
+.geser img {
+    border-radius: 10%;
+    max-width: 30%;
+    height: 200px;
+    margin-bottom: 200px;
+    margin-left: -10px;
+    position: fixed;
+}
+
+.geser p {
+    margin-top: 200px;
+    text-align: center;
+    width: 500px;
+    position: fixed;
+}
+
+.geser h1 {
+    margin-top: 100px;
+    text-align: center;
+    width: 500px;
+    position: fixed;
+}
