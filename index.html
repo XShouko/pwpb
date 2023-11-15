@@ -1,155 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Taruh Navbar Sini -->
+    <nav>
+        <div class="nav-box">
+            <div class="logo-cont">
+                <img src="assets/logo.jpg" alt="TirtaCake">
+            </div>
+            <div class="nav-wrapper">
+                <ul>
+                    <li class="li-navbar"><a class="a-navbar-now" href="index.html">Home</a></li>
+                    <li class="li-navbar"><a class="a-navbar" href="product.html">Product</a></li>
+                    <li class="li-navbar"><a class="a-navbar" href="about.html">About</a></li>
+                    <li class="li-navbar"><a class="a-navbar" href="riview.html">Review</a></li>
+                    <li class="li-navbar"><a class="a-navbar" href="contact.html">Contact</a></li> 
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
 
-body {
-    font-family: 'Patrick Hand', cursive;
-}
+    <div class="slider">
+        <button class="prev" onclick="changeSlide(-1)"></button>
+        <div class="slide-container">
+            <div class="slide"><img src="./assets/4.jpg" alt=""></div>
+            <div class="slide"><img src="./assets/5.jpg" alt=""></div>
+            <div class="slide"><img src="./assets/6.jpg" alt=""></div>
+        </div>
+        <button class="next" onclick="changeSlide(1)"></button>
+    </div>
+    <div class="top">
+        <h1>Best Seller</h1>
+    </div>
+    <div class="menu">
+        <div class="item"><img src="./assets/4.jpg" alt=""></div>
+        <div class="item"><img src="./assets/5.jpg" alt=""></div>
+        <div class="item"><img src="./assets/6.jpg" alt=""></div>
+        <div class="item"><img src="./assets/7.jpg" alt=""></div>
+        <div class="item"><img src="./assets/8.jpg" alt=""></div>
+        <div class="item"><img src="./assets/9.jpg" alt=""></div>
+        <div class="item"><img src="./assets/10.jpg" alt=""></div>
+        <div class="item"><img src="./assets/11.jpg" alt=""></div>
+        <div class="item"><img src="./assets/12.jpg" alt=""></div>
+        <div class="item"><img src="./assets/14.jpg" alt=""></div>
+        <div class="item"><img src="./assets/15.jpg" alt=""></div>
+        <div class="item"><img src="./assets/16.jpg" alt=""></div>
+        <div class="item"><img src="./assets/17.jpg" alt=""></div>
+        <div class="item"><img src="./assets/18.jpg" alt=""></div>
+        <div class="item"><img src="./assets/19.jpg" alt=""></div>
+        <div class="item"><img src="./assets/20.jpg" alt=""></div>
+        <div class="item"><img src="./assets/21.jpg" alt=""></div>
+        <div class="item"><img src="./assets/22.jpg" alt=""></div>
+    </div>    
+    
+    <!-- Footer -->
 
-html {
-    scroll-behavior: smooth;
-}
-
-/* Taruh Style Navbar Disini */
-.nav-box{
-    position: fixed;
-    background-color: white;
-    z-index: 3;
-    width: 100%;  
-    height: 12vh;
-    top: 0;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    justify-content: space-between;
-}
-.nav-wrapper ul {  
-    display: flex;
-    height: 60px;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar{
-    margin: 10px;
-}
-.li-navbar {
-    list-style-type: none;
-    padding: 0 20px;
-    margin: 0;
-    font-size: 15px;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-}
-.a-navbar {
-    color: #ABABAB;
-    text-decoration: none;
-    font-weight: 450;
-}
-.logo-cont img {
-    margin-left: 20px;
-    width: 65px;
-}
-.a-navbar-now {
-    color: #90B474;
-    text-decoration: underline;
-    font-weight: 650;
-}
-.a-navbar:hover{
-    color: #919191;
-    font-weight: 550;
-}
-
-/* Navbar End */
-
-.slider {
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-}
-
-.slide-container {
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-}
-
-.slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-shrink: 0;
-    transition: transform 0.5s ease;
-}
-
-.slide img {
-    border-radius: 10%;
-    width: 80%;
-    height: 60%;
-}
-
-.prev, .next {
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    width: 100px;
-    height: 100px;
-}
-
-.prev {
-    margin-left: 500px;
-    background-image: url('./assets/nextkiri.png');
-}
-
-.next {
-    margin-right: 500px;
-    background-image: url('./assets/nextkanan.png');
-}
-
-.menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 20px;
-}
-
-.item {
-    padding: 15px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out; 
-    position: relative;
-    overflow: hidden; 
-    cursor: pointer;
-}
-
-.item img {
-    border-radius: 10%;
-    width: 80%;
-    height: 45%;
-}
-
-.top h1 {
-    margin-left: 50px;
-    margin-top: 100px;
-}
-
-.item:hover {
-    transform: scale(1.1); 
-}
-
-
-/* Footer */
-
-.footer {
-    background-color: #f2f2f2;
-    padding: 10px;
-    text-align: center;
-}
-.footer div {
-    display: inline-block;
-    margin: 0 50px;
-}
+        <div class="footer">
+            <div>
+                <h3>About Us</h3>
+                <p>Tirta Cake berawal dari 6 April 2019, dimana saya Septya masih bekerja pada salah satu coffee shop. Kebetulan owner shop itu jual cake homemade, dari sana lah saya mulai bantu bantu bos saya, dan saya jadi tau bagaimana, apa saja bahan bahan dan alatnya. Akhirnya saya mencoba membuka usaha cake rumahan dengan bahan yang mirip. Dengan jangkauan pemasaran yang masih dari mulut ke mulut, dari saudara ke teman, dan akhirnya sampai sekarang.</p>
+            </div>
+            <div>
+                <h3>Credits</h3>
+                <p>1. I Made Artha Arimbawa (Home)</p>
+                <p>2. Putu Abi Surya Pratama (Product)</p>
+                <p>3. I Made Cahya Utama Yuana (About)</p>
+                <p>4. Putu Artha Wiguna (Review)</p>
+                <p>5. I Gusti Agung Panji Kusuma Wardana (Contact)</p>
+            </div>
+            </div>
+            
+    <script src="script.js"></script>
+</body>
+</html>
