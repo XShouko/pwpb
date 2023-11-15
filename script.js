@@ -42,7 +42,7 @@ function changeSlide(n) {
     let containerWidth = containerDimensions.width;
 
     nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
+        item.scrollRight += containerWidth;
     })
 
     preBtn[i].addEventListener('click', () => {
@@ -55,7 +55,7 @@ productContainers1.forEach((item, i) => {
   let containerWidth = containerDimensions.width;
 
   nxtBtn1[i].addEventListener('click', () => {
-      item.scrollLeft += containerWidth;
+      item.scrollRight += containerWidth;
   })
 
   preBtn1[i].addEventListener('click', () => {
