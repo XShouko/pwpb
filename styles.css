@@ -519,12 +519,12 @@ html {
 
 .prev {
     margin-left: 300px;
-    background-image: url('nextkiri.png');
+    background-image: url('assets/kiri.png');
 }
 
 .next {
     margin-right: 300px;
-    background-image: url('nextkanan.png');
+    background-image: url('assets/kanan.png');
 }
 
 
