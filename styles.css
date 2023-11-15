@@ -373,6 +373,7 @@ html {
 
 .container{
     display: flex;
+    margin-top: 100px;
 }
 .ftkue{
   padding: 10%;
@@ -383,8 +384,6 @@ html {
 
 .name1{
   padding-top: 8%;
-    font-size: larger;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .about1 {
@@ -504,27 +503,6 @@ html {
     text-align: center;
     width: 500px;
     position: fixed;
-}
-
-.prev, .next {
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    width: 100px;
-    height: 100px;
-}
-
-.prev {
-    margin-left: 300px;
-    background-image: url('assets/kiri.png');
-}
-
-.next {
-    margin-right: 300px;
-    background-image: url('assets/kanan.png');
 }
 
 
