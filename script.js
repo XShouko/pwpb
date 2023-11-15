@@ -1,3 +1,9 @@
+const productContainers = [...document.querySelectorAll('.product-container')];
+const productContainers1 = [...document.querySelectorAll('.product-container1')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+const nxtBtn1 = [...document.querySelectorAll('.nxt-btn1')];
+const preBtn1 = [...document.querySelectorAll('.pre-btn1')];
 let slideIndex = 0;
 
 function changeSlide(n) {
@@ -30,13 +36,6 @@ function changeSlide(n) {
         slide.style.transform = `translateX(-${slideIndex * 100}%)`;
     }
 }
-
-const productContainers = [...document.querySelectorAll('.product-container')];
-const productContainers1 = [...document.querySelectorAll('.product-container1')];
-const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-const preBtn = [...document.querySelectorAll('.pre-btn')];
-const nxtBtn1 = [...document.querySelectorAll('.nxt-btn1')];
-const preBtn1 = [...document.querySelectorAll('.pre-btn1')];
 
   productContainers.forEach((item, i) => {
     let containerDimensions = item.getBoundingClientRect();
